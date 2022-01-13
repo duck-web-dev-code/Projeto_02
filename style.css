@@ -1,0 +1,203 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height:100vh;
+    width:100%;
+    position:relative;
+    top: 0;
+    left: 0;
+    background: #e9e9e9eb;
+}
+/*==== LOGO ====*/
+.container .logo{
+    position: absolute;
+    left: 8%;
+    top: 30px;
+    font-size:30px;
+    z-index:997 ;
+    font-weight:bold;
+    color:#165397;
+}
+/*==== MENU ====*/
+.navbar{
+    height:90px;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fdfefe;
+    display: grid;
+    place-items: center;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li{
+    font-size: 20px;
+    margin: 0 40px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#000;
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    color:#165397;
+}
+/*==== BUTAO ====*/
+.navbar ul li.login{
+    height:50px ;
+    width:120px;
+    position: absolute;
+    top: 20px;
+    right:7%;
+    display: grid;
+    place-items: center;
+    background:#165397;
+    border-radius: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar ul li.login a{
+    color: #e9e9e9eb;
+}
+.navbar ul li.login:hover{
+    background:black;
+}
+/*==== IMAGE ====*/
+.image{
+    position: absolute;
+    top: 50px;
+    right:20px;
+    z-index: 999;
+}
+.image img{
+    height:600px;
+    filter:drop-shadow(-140px -140px 5px rgba(0,0,0,0.5));
+    transition: 0.5s;
+}
+
+.image img:hover{
+    filter:drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+}
+
+/*==== CONTENT ====*/
+.content{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    z-index: 996;
+    margin: 0;
+}
+.content h2{
+    font-size:300px;
+    color:#165397;
+
+
+}
+.content h2:hover{
+    color:#000;
+    
+    transition: 0.5s;
+}
+.content h4{
+    font-size:70px;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content h4:hover{
+    color:#165397;
+    transition: 0.5s;
+}
+/*==== ICONS ====*/
+.icons{
+    height:500px;
+    width:65px;
+    position:absolute;
+    left:0;
+    top: 90px;
+    background:#1c5da4;
+    border-radius: 0 60px 60px 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index: 998;
+    transition: 0.5s;
+}
+.icons:hover{
+    background:#000;
+}
+.icons a {
+    text-decoration:none;
+    height:40px;
+    width:40px;
+    color:#e9e9e9eb;
+    display: grid;
+    place-items: center;
+    margin: 30px 0;
+    transition: 0.4s;
+    font-size:23px;
+}
+.icons a:hover{
+    color: #1b66bb;
+}
+
+/*==== PAGINAÇÃO ====*/
+.pagi{
+    position: absolute;
+    bottom:4%;
+    right:20%;
+    z-index: 995;
+}
+.pagi a{
+    text-decoration: none;
+    color:#000;
+    font-size:70px;
+    margin:0 30px 0;
+    transition: 0.5s;
+}
+.pagi a:hover{
+    color: #165397;
+}
+
+.linha-1, .linha-2{
+    height:200px;
+    width:60px;
+    background:#000;
+    position:absolute;
+    bottom:0;
+    left:40%;
+    transform: skewX(-45deg);
+}
+.linha-2{
+    height: 110px;
+    left:46%;
+}
+
+
+
+
+
+/* p{
+    position: relative;
+    left: 60px;
+    top: 330px;
+    padding: 0; 
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Courier New', 'Courier', sans-serif;
+    letter-spacing: .6em;
+    padding-bottom: 10px;
+    width: 280px;
+    border-bottom:  1px solid white;
+    font-size: 20px;
+   }  */
